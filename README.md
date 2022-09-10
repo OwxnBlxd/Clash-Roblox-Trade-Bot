@@ -1,2 +1,4 @@
 # Clash's Trade Bot
-Bot
+created by Owenn and MNKY
+
+
