@@ -1,0 +1,84 @@
+[General]
+
+ColouredConsole = true
+
+[Authentication]
+
+
+
+[Trading]
+
+;Seconds
+TimeBetweenSendingTrades = 10
+
+MaximumItemValue = 9999999
+
+MaxItemsToGive = 4
+MaxItemsToReceive = 4
+MinItemsToSend = 1
+MinItemsToReceive = 1
+
+IncreasePercentage = 15
+MinimumIncrease = 1
+
+;Which type of items can be sent
+;Rap
+;Value
+;None
+
+Priority = Rap
+
+CheckOutbound = true
+OutboundCheckerDelay = 30
+
+;Rap Divided By Price, ignore unless you know what youre doing
+ProjectedVal = 1.2
+FlipProjecteds = true
+AvoidProjecteds = true
+
+ItemsToKeep = 1
+ItemsYouDontWant = 154727201, 64160547, 27052155, 52501424, 22157580, 147974365, 549058243, 71499731, 112609138, 182774739, 81688984, 136172656, 60115725, 207207466, 105342573, 60674719, 67319425, 52504099, 106708987, 25545089, 49939702, 70476451, 52462233, 51353085, 100933289, 430063819, 835095003, 658757624, 64499327, 16924470, 29715020, 62718352, 64508973, 29532089, 1032641, 60888225, 1396360, 25609915, 12314312, 262399119, 26424059, 64493637, 51243561, 24826755, 122278276, 19644587, 10860580, 15973059, 5671970, 5785985, 89622944, 63687750, 162067330, 26417031, 207206653, 14515496, 206136361, 76692143, 116040828, 135470884, 48156111, 51245277, 76063064, 44113968, 20573098, 25555262, 402303179, 315617026, 150337838, 54933878, 128158617, 37820239, 186956843, 18482375, 62720062, 121259978, 53917288, 73232825, 71037101, 111902100, 147983227, 55917432, 55610781, 147937443, 65969704, 156095442, 16171848, 119101643, 553718984, 67201161, 49939639, 94265084, 104642550, 33615415, 54586667, 57678134, 74972442, 24727799, 5161514, 59190543, 20064349, 76692214, 209983989, 56944284, 129471170, 136758649, 35167822, 69434797, 16986649, 24975496, 273965627, 51242770, 120759721, 38248947, 69947367, 2041982658, 121260788, 74970701, 100929831, 34126856, 23551803, 376805952, 48039333, 362081939, 25977727, 49048854, 144506837, 1139753, 46363750, 62721575, 236399087
+PeopleNotToSendTo = 1
+
+;Hours
+PartnerCoolDown = 2
+
+;Which trades are sent first
+; 1 - Highest Value
+; 2 - Highest Rap
+; 3 - Highest Demand
+
+TradePriority = 1
+
+
+[Scoring]
+
+MinimumScoreIncrease = 0
+
+CheckDemand = true
+CheckIfRare = true
+CheckIncrease = true
+CheckBelowRap = true
+
+;Amount of points given
+RareTrue = 1
+DemandTrue = 1
+IsGoingToIncreaseTrue = 1
+BelowRapTrue = 1
+
+;Amount of points subtracted
+RareFalse = -1 
+DemandFalse = -1
+IsGoingToIncreaseFalse = -1 
+BelowRapFalse = -1
+
+;The amount of rap it needs to go up ina day 
+IncreaseRap = 500
+;Average daily sales 
+MinimumDailySales = 3
+
+
+[Debug]
+
+PrintSuccessFulTrades = true
+DontSendTrades = false 
